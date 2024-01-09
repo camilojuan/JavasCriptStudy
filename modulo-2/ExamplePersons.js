@@ -44,3 +44,17 @@ class Estudents extends Persons {
 //objetos de estudiantes
 const Estudent1 = new Estudents(2,"Camilo",27,["Redes 2", "Proyecto de grado"],4.0);
 console.log(Estudent1.ShowEstudents());
+
+//crearemos otra clase que sea de usuarios
+class Users extends Persons {
+    constructor (Id,Nombre, Edad, Usuario,Password){
+        super(Id, Nombre,Edad);
+        this.User = Usuario;
+        this.Password = Password;
+    }
+    ShowUsers () {
+        return `${this.Nombre} Tiene como usuario: ${this.User} y su contraseña es: ${this.Password}`;
+    }
+}
+const User1 = new Users(3,"David",27,"Deivid","12345");
+console.log(User1.ShowUsers());
