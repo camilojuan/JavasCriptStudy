@@ -26,7 +26,7 @@ class Estudiantes {
         this.promedio= ParametroPromedio
     }
     listar() {
-        
+        return 1;
     }
 }
 //const ImprEstu = new Estudiantes();
